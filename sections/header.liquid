@@ -130,8 +130,10 @@
       endif
     -%}
 
+   {% render 'button' with settings.button_text %}
 
-    {% section 'custom-header-section' %}
+
+
 
 
     {%- if section.settings.logo_position != 'middle-center' -%}
@@ -637,7 +639,14 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "text",
+      "label": "Button Text",
+      "id": "button_text",
+      "default": "Click Me!"
     }
+
   ],
   "blocks": [
     {

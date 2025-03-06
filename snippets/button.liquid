@@ -1,0 +1,27 @@
+<button class="custom-button">
+  {{ button_text | default: 'Click Me' }}
+</button>
+
+<style>
+  .custom-button {
+    display: flex;
+    border: none;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    color: #FCF2EC;
+    background-color: #40C8F4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* padding: 0 20px; */
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+  }
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+</style>
